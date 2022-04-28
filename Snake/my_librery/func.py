@@ -48,11 +48,11 @@ def generate_apple(game_res, size):
     lst_x = []
     lst_y = []
     n = size
-    while n < game_res[0] - 11:
+    while n < game_res[0] - size +1:
         lst_x.append(n)
         n += size
     n = size
-    while n < game_res[1] - 11:
+    while n < game_res[1] - size +1:
         lst_y.append(n)
         n += size
     x = random.choice(lst_x)
